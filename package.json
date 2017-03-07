@@ -1,0 +1,64 @@
+{
+  "name": "react-redux-silverstripe",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js",
+    "build": "NODE_ENV=production webpack",
+    "test": "mocha source/js/tests --compilers js:babel-core/register --recursive"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.22.0",
+    "classnames": "^2.1.5",
+    "fixed-data-table": "^0.6.1",
+    "font-awesome": "^4.6.3",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^4.4",
+    "redux": "^3.0",
+    "redux-thunk": "^1.0.3",
+    "superagent": "^1.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "css-loader": "^0.16.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^0.0.7",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-react": "^3.2.3",
+    "estraverse-fb": "^1.3.1",
+    "expect": "^1.14.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "mocha": "^2.4.5",
+    "react-hot-loader": "^1.2.8",
+    "redux-logger": "^2.6.1",
+    "style-loader": "^0.12.3",
+    "svgo": "^0.5.6",
+    "svgo-loader": "^1.1.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "loose": true
+        }
+      ],
+      "react",
+      "stage-2"
+    ]
+  }
+}

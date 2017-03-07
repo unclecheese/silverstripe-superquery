@@ -1,0 +1,8 @@
+---
+Name: superquery
+---
+UncleCheese\SuperQuery\SuperQueryAPI:
+  results_per_page: 20
+Injector:
+  SuperQueryExpressionLanguage:
+    factory: UncleCheese\SuperQuery\ExpressionLanguageFactory
