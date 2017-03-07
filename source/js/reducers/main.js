@@ -2,7 +2,7 @@
 export const main = function (
 	state = {
 		errorMsg: null,
-		query: "_('File')",
+		query: "",
 		loading: false,
 		dataClass: null,
 		data: [],		
@@ -23,7 +23,6 @@ export const main = function (
 		selectedSavedQueryID: null
 	}, 
 	action = {}) {
-	console.log(action.type);
 		switch(action.type) {
 			case 'THROW_ERROR':
 
@@ -137,7 +136,6 @@ export const main = function (
 					initialised,
 					showColumns
 				};
-console.log(newState.showColumns);
 				return newState;
 			case 'SHOW_QUERY_LIST':
 				return {

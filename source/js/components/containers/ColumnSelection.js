@@ -13,7 +13,6 @@ class ColumnSelection extends React.Component {
 
 	componentWillReceiveProps (nextProps) {
 		if(!nextProps.savedQuery) {
-			console.log('nope');
 			if(nextProps.dataClass !== this.props.dataClass) {		
 				this.props.selectColumns(nextProps.options);
 			}

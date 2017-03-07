@@ -8,12 +8,18 @@ const Messages = ({
 	initialised,
 	data
 }) => {
+	console.log(error);
 	return (
 	<div className="message-container">
 		{loading && <Bounce />}
 		{error && 
 			<div className="error-message">
-				<h3>Well, that didn't work.</h3>				
+				<h3>Well, that didn't work.</h3>
+				<p>{error.substring(0, 70)}
+				{error.length > 70 &&
+					<a href="#" onClick={(e) => {e.preventDefault(); alert(error);}}>Show full error</a>
+				}
+				</p>				
 			</div>
 		}
 		{initialised && data && data.length === 0 &&

@@ -29,6 +29,7 @@ class QueryBar extends React.Component {
 				<div className="saved-queries">
 					<SavedQuerySelector />
 				</div>
+				<label>Enter a query, e.g. <em>_('File').sort('Created', 'DESC')</em></label>
 				<div className="query-input" style={{width: this.props.width-250}}>
 					<input onChange={this.handleEntry} onKeyUp={this.handleEntry} value={this.props.query} />
 				</div>

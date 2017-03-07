@@ -19,7 +19,7 @@ expression language](http://symfony.com/doc/current/components/expression_langua
 **Examples:**
 
 * `_('File').filter('Created:LessThan', '2015-01-01')`
-* `_('Member').filter({'Email:PartialMatch': 'hotmail.com', 'Active': true).sort('Created DESC')`
+* `_('Member').filter({'Email:PartialMatch': 'hotmail.com', 'Active': true}).sort('Created DESC')`
 * `_('Event').filter('Approved', true).relation('Sponsors').sort('CompanyName ASC')`
 * `_('Event').filter('Approved', false).removeAll()`
 
@@ -42,6 +42,15 @@ The API is decoupled from the CMS, meaning the tool can be installed anywhere in
 ## Security
 
 Needless to say, running raw queries against your database is serious business. All actions are restricted to `ADMIN`.
+
+## Development
+
+The tool is built on [ReactJS](https://facebook.github.io/react) using the [Webpack](https://webpack.github.io) module builder. To do dev work:
+* Run `npm run start` in the module root directory.
+* Visit the `admin/superquery` URL directly in your browser. Navigating to it from with in the CMS will not properly load the dev server.
+
+For realeases / Pull requests:
+* Run `npm run build` from the module root directory.
 
 ## Troubleshooting
 

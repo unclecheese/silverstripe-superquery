@@ -11,7 +11,6 @@ class SortHeaderCell extends React.Component {
 	}
 
 	handleSort(e) {
-		console.log('wtf');
 		e.preventDefault();
 		this.props.onSort(
 			this.props.columnKey,
