@@ -85,7 +85,7 @@ class ResultsTable extends React.Component {
 		}
 
 		const tableWidth = (width-250);
-		const tableHeight = height*0.75;
+		const tableHeight = height*0.6;
 
 		return (
        	<div className="table-wrapper" style={{width: tableWidth}}>
